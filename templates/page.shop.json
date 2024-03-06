@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d6c15a54-bda0-4a8a-b68f-d2deb56507a3": {
+      "type": "product-list",
+      "settings": {
+        "bg_color": "#f7f7f7",
+        "txt_color": "#121212",
+        "icon": "shopify:\/\/shop_images\/Omega-3-cat-1.png",
+        "collection": "combo-packs",
+        "coll_layout": "slider",
+        "padding_top": 20,
+        "padding_bottom": 104,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "045d1ad8-1ec1-4607-9672-247e7467400b": {
+      "type": "product-list",
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "icon": "shopify:\/\/shop_images\/Omega-3-cat-1.png",
+        "collection": "top-supplements",
+        "coll_layout": "grid",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d6c15a54-bda0-4a8a-b68f-d2deb56507a3",
+    "045d1ad8-1ec1-4607-9672-247e7467400b"
+  ]
+}

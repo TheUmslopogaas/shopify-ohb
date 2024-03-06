@@ -1,0 +1,182 @@
+{%- style -%}
+  {% if section.settings.bg_color != blank %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{section.settings.bg_color}};
+    }
+  {% endif %}
+  {% if section.settings.bg_img != blank %}
+    #shopify-section-{{ section.id }} {
+      background: url({{section.settings.bg_img | img_url: 'master'}}) center/cover no-repeat;
+    }
+  {% endif %}
+  {% if section.settings.txt_color != blank %}
+    #shopify-section-{{ section.id }},
+    #shopify-section-{{ section.id }} p {
+      color: {{section.settings.txt_color}};
+    }
+  {% endif %}
+  
+    /* Section Dynamic Spacing */
+    #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+      margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        margin-top: {{ section.settings.margin_top }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="img-slider-txt">
+    <div class="page-width {{ section.settings.img_pos }}">
+      <div class="img-slider-txt">
+        <div class="primary-title">Contact Information</div>
+        {% if section.settings.phone != blank %}
+          <div class="contact-row phone">
+            <div class="contact-icon"><img src="https://cdn.shopify.com/s/files/1/0821/2244/0994/files/cntct-icon-01.png" alt=""></div>
+            <div class="contact-text">
+              <div class="contact-title">Phone Number</div>
+              <a href="tel:{{section.settings.phone}}" class="contact-desc">{{ section.settings.phone }}</a>
+            </div>
+          </div>
+        {% endif %}
+        {% if section.settings.mail != blank %}
+          <div class="contact-row mail">
+            <div class="contact-icon"><img src="https://cdn.shopify.com/s/files/1/0821/2244/0994/files/icon-mail.png" alt=""></div>
+            <div class="contact-text">
+              <div class="contact-title">Send Us A Text Message</div>
+              <a href="mailto:{{section.settings.mail}}" class="contact-desc">{{ section.settings.mail }}</a>
+            </div>
+          </div>
+        {% endif %}
+        {% if section.settings.location != blank %}
+          <div class="contact-row location">
+            <div class="contact-icon"><img src="https://cdn.shopify.com/s/files/1/0821/2244/0994/files/cntct-icon-03.png" alt=""></div>
+            <div class="contact-text">
+              <div class="contact-title">Our Address</div>
+              <a href="#" class="contact-desc">{{ section.settings.location }}</a>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <div class="img-slider-wrap">
+        <div class="google-map">
+          {{section.settings.google_map}}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+   
+  {% schema %}
+  {
+    "name": "Contact Information",
+    "class": "section section-imgtxt section-contact-map",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background Image",
+        "info": "Keep this blank to use the background color."
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "txt_color",
+        "label": "Content Color"
+      },
+      {
+        "type": "select",
+        "id": "img_pos",
+        "options": [
+          {"value": "img-left","label": "Image Left"},
+          {"value": "img-right","label": "Image Right"}
+        ],
+        "default": "img-left",
+        "label": "Image Position"
+      },
+      {
+        "type": "text",
+        "id": "phone",
+        "label": "Phone Number",
+        "default": "(877) 572-3444"
+      },
+      {
+        "type": "text",
+        "id": "mail",
+        "label": "Email",
+        "default": "support@optimalhealthbridge.com"
+      },
+      {
+        "type": "text",
+        "id": "location",
+        "label": "Address",
+        "default": "1001 Wilshire Boulevard # 2107, Los Angeles, CA 90017"
+      },
+      {
+        "type": "html",
+        "id": "google_map",
+        "label": "Embedded Google Map Location",
+        "default": "<iframe style='height:100%;width:100%;border:0;' frameborder='0' src='https://www.google.com/maps/embed/v1/place?q=1001+Wilshire+Boulevard+#2107,+Los+Angeles,+CA+90017,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8'></iframe>"
+      },
+      {
+        "type": "header",
+        "content": "Section Margin/Padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 400,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 400,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin Top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin Bottom",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {"name": "Contact Information"}
+    ]
+  }
+  {% endschema %}

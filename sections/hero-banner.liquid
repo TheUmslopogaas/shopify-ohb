@@ -1,0 +1,253 @@
+{%- style -%}
+  /* Section Background */
+  {% if section.settings.bg_color != blank %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.bg_color }};
+    }
+  {% endif %}
+  {% if section.settings.txt_color != blank %}
+    #shopify-section-{{ section.id }} {
+      color: {{ section.settings.txt_color }};
+    }
+  {% endif %}
+  {% if section.settings.bg_img != blank %}
+    #shopify-section-{{ section.id }} {
+      background: url("{{ section.settings.bg_img | img_url: 'master' }}") center/cover no-repeat;
+    }
+  {% endif %}
+
+
+  /* Section Height */
+  {% if section.settings.use_desk_height == true %}
+    #shopify-section-{{ section.id }} {
+      height: {{section.settings.desk_height}}px;
+    }
+  {% endif %}
+  {% if section.settings.use_mbl_height == true %}
+    @media (max-width: 749px) {
+      #shopify-section-{{ section.id }} {
+        height: {{section.settings.mbl_height}}px;
+      }
+    }
+  {% endif %}
+
+  /* Section Dynamic Spacing */
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="section-herobanner-wrap page-width">
+  {% if section.settings.title != blank %}
+    <div class="banner-title font-custom-1__heavy">{{ section.settings.title }}</div>
+  {% endif %}
+  {% if section.settings.desc != blank %}
+    <div class="primary-desc">{{ section.settings.desc }}</div>
+  {% endif %}
+  {% if section.settings.download_img != blank %}
+  <a href="{{ section.settings.download_link }}" class="downloadable-product">
+    <div class="prd-img">
+      <img src="{{ section.settings.download_img | img_url: 'master' }}" alt="">
+    </div>
+    {% if section.settings.download_btn != blank %}
+      <button class="download-btn">{{ section.settings.download_btn }}</button>
+    {% endif %}
+    {% if section.settings.download_desc != blank %}
+      <div class="description font-custom-1__regular">{{ section.settings.download_desc }}</div>
+    {% endif %}
+  </a>
+  {% endif %}
+  
+  {% if section.settings.section_btn_label != blank %}
+    <a href="{{ section.settings.section_btn_link }}" class="primary-btn">{{ section.settings.section_btn_label }}</a>
+  {% endif %}
+  {% if section.settings.desc_2 != blank %}
+    <div class="description">{{ section.settings.desc_2 }}</div>
+  {% endif %}  
+</div>
+
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "class": "section-custom section-herobanner",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Styling"
+    },    
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background Image",
+      "info": "Keep this blank to use the background color"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "txt_color",
+      "label": "Content Color"
+    },
+    {
+      "type": "header",
+      "content": "Section Contents"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Optimal Health Bridge"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Section Description",
+      "default": "<p>Discover the easy way to a healthier heart and body.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "download_img",
+      "label": "Downloadable Product Image"
+    },
+    {
+      "type": "text",
+      "id": "download_btn",
+      "label": "Downloadable Product Button Label",
+      "default": "DOWNLOAD NOW"
+    },
+    {
+      "type": "richtext",
+      "id": "download_desc",
+      "label": "Downloadable Product Description",
+      "default": "<p>CLICK HERE To Download Garey’s Free Book, “The Lifestyle Cure”</p>"
+    },
+    {
+      "type": "url",
+      "id": "download_link",
+      "label": "Downloadable Product URL"
+    },
+    {
+      "type": "text",
+      "id": "section_btn_label",
+      "label": "Section Button Label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "section_btn_link",
+      "label": "Section Button Link"
+    },
+    {
+      "type": "richtext",
+      "id": "desc_2",
+      "label": "Section Description (Bottom)",
+      "default": "<p>15,000+ Satisfied Customers</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow",
+      "label": "Show Go Down Button",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Section Layout"
+    },    
+    {
+      "type": "checkbox",
+      "id": "use_desk_height",
+      "label": "Use custom height (Desktop)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "desk_height",
+      "min": 100,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "label": "Desktop Height",
+      "default": 500
+    },
+    {
+      "type": "checkbox",
+      "id": "use_mbl_height",
+      "label": "Use custom height (Mobile)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "mbl_height",
+      "min": 50,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "label": "Mobile Height",
+      "default": 400
+    },    
+    {
+      "type": "header",
+      "content": "Section Margin/Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 0
+    }    
+  ],
+  "presets": [
+    {"name": "Hero Banner"}
+  ]
+}
+{% endschema %}

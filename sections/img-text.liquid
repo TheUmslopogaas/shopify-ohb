@@ -1,0 +1,199 @@
+{%- style -%}
+{% if section.settings.bg_color != blank %}
+  #shopify-section-{{ section.id }} {
+    background-color: {{section.settings.bg_color}};
+  }
+{% endif %}
+{% if section.settings.bg_img != blank %}
+  #shopify-section-{{ section.id }} {
+    background: url({{section.settings.bg_img | img_url: 'master'}}) center/cover no-repeat;
+  }
+{% endif %}
+{% if section.settings.txt_color != blank %}
+  #shopify-section-{{ section.id }},
+  #shopify-section-{{ section.id }} p {
+    color: {{section.settings.txt_color}};
+  }
+{% endif %}
+
+  /* Section Dynamic Spacing */
+  #shopify-section-{{ section.id }} .page-width {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .page-width {
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="img-slider-txt">
+  <div class="page-width {{ section.settings.img_pos }}">
+    <div class="img-slider-wrap">
+      {% if section.settings.img != blank %}
+        <div class="img"><img src="{{ section.settings.img | img_url: 'master' }}" alt=""></div>
+      {% endif %}
+    </div>
+    <div class="img-slider-txt">
+      {% if section.settings.show_quote == true %}
+        <div class="quote"><img src="https://cdn.shopify.com/s/files/1/0821/2244/0994/files/quote-icon.png" alt=""><br></div>
+      {% endif %}
+      {% if section.settings.pretitle != blank %}
+        <div class="pretitle">{{ section.settings.pretitle }}</div>
+      {% endif %}
+      {% if section.settings.title != blank %}
+        <div class="primary-title">{{ section.settings.title }}</div>
+      {% endif %}
+      {% if section.settings.desc != blank %}
+        <div class="primary-desc">{{ section.settings.desc }}</div>
+      {% endif %}
+      {% if section.settings.btn_label != blank %}
+        <a href="{{ section.settings.btn_link }}" class="primary-btn">{{ section.settings.btn_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% if section.settings.img_small == true %}
+  <style>
+    @media (min-width: 900px) {
+      #shopify-section-{{ section.id }} .page-width .img-slider-wrap {
+        max-width: 250px
+      }
+    }
+  </style>
+{% endif %}
+
+ 
+{% schema %}
+{
+  "name": "Image With Text",
+  "class": "section section-imgtxt",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background Image",
+      "info": "Keep this blank to use the background color."
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "txt_color",
+      "label": "Content Color"
+    },
+    {
+      "type": "select",
+      "id": "img_pos",
+      "options": [
+        {"value": "img-left","label": "Image Left"},
+        {"value": "img-right","label": "Image Right"}
+      ],
+      "default": "img-left",
+      "label": "Image Position"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Section Image"
+    },
+    {
+      "type": "text",
+      "id": "pretitle",
+      "label": "Section Pretitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Safe, High Quality Products You Can Trust"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Section Description",
+      "default": "<p>OHB products are manufactured in a GMP certified facility, right here in the United States. We follow the latest safety protocols to ensure all our products meet the highest quality standards. Our nutrients are naturally sourced through green practices. OHB is committed to delivering excellence in everything we do.</p>"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Section Button URL"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Section Button Label",
+      "default": "BUY NOW"
+    },
+    {
+      "type": "checkbox",
+      "id": "img_small",
+      "label": "Smaller Image Width",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_quote",
+      "label": "Show Quote Icon",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Section Margin/Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {"name": "Image With Text"}
+  ]
+}
+{% endschema %}

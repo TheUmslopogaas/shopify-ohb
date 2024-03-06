@@ -1,0 +1,298 @@
+{%- style -%}
+  {% if section.settings.bg_color != blank %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{section.settings.bg_color}};
+    }
+  {% endif %}
+  {% if section.settings.bg_img != blank %}
+    #shopify-section-{{ section.id }} {
+      background: url({{section.settings.bg_img | img_url: 'master'}}) center/cover no-repeat;
+    }
+  {% endif %}
+  {% if section.settings.txt_color != blank %}
+    #shopify-section-{{ section.id }},
+    #shopify-section-{{ section.id }} p {
+      color: {{section.settings.txt_color}};
+    }
+  {% endif %}
+  
+  /* Section Dynamic Spacing */
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .page-width {
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+  
+<div class="page-width product-table">
+  <div class="primary-title text--center">{{section.settings.title}}</div>
+  <div class="table-wrap">
+    <table>
+      <tbody>
+        <tr class="srvcs">
+          <th class="remove-border remove-bg"></th>
+          <th class="remove-border remove-bg"></th>
+          <th class="img-blk remove-border remove-bg">
+            <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img3.png" alt="table img3" title="Home - True Omega-3 Lower Cholesterol 38" data-lazy-src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img3.png" data-ll-status="loaded" class="entered lazyloaded">
+            <noscript>
+              <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img3.png" alt="table img3" title="Home - True Omega-3 Lower Cholesterol 38">
+            </noscript>
+          </th>
+          <th class="img-blk remove-border remove-bg">
+            <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img1.png" alt="table img1" title="Home - True Omega-3 Lower Cholesterol 39" data-lazy-src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img1.png" data-ll-status="loaded" class="entered lazyloaded">
+            <noscript>
+              <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img1.png" alt="table img1" title="Home - True Omega-3 Lower Cholesterol 39">
+            </noscript>
+          </th>
+          <th class="img-blk remove-border remove-bg">
+            <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img2.png" alt="table img2" title="Home - True Omega-3 Lower Cholesterol 40" data-lazy-src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img2.png" data-ll-status="loaded" class="entered lazyloaded">
+            <noscript>
+              <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img2.png" alt="table img2" title="Home - True Omega-3 Lower Cholesterol 40">
+            </noscript>
+          </th>
+          <th class="img-blk remove-border remove-bg">
+            <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img4.png" alt="table img4" title="Home - True Omega-3 Lower Cholesterol 41" data-lazy-src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img4.png" data-ll-status="loaded" class="entered lazyloaded">
+            <noscript>
+              <img decoding="async" width="70" height="70" src="https://optimalhealthbridge.com/wp-content/uploads/2021/10/table-img4.png" alt="table img4" title="Home - True Omega-3 Lower Cholesterol 41">
+            </noscript>
+          </th>
+        </tr>
+        <tr class="srvcs headings">
+          <th class="remove-border"></th>
+          <th class="remove-border"></th>
+          <th class="img-blk header-border col-1-bg header-col-1">
+            <strong>True Omega 3</strong>
+          </th>
+          <th class="img-blk header-border col-2-4-bg header-col-2-4">
+            <strong>ResQ 1250</strong>
+          </th>
+          <th class="img-blk header-border col-3-bg header-col-3">
+            <strong>
+              <span>Carlson</span>
+              <br> Elite Omega </strong>
+          </th>
+          <th class="img-blk header-border col-2-4-bg header-col-2-4">
+            <strong>Noridc Natuarals Ultimate Omega</strong>
+          </th>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border row-0-rd right-border" colspan="2">
+            <h3>Serving Size</h3>
+          </td>
+          <td class="remove-border col-1-bg-2">240</td>
+          <td class="remove-border col-2-4-bg-2">200</td>
+          <td class="remove-border col-3-bg-2">240</td>
+          <td class="remove-border col-2-4-bg-2">210</td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg-2 right-border" colspan="2">
+            <h3>Serving Per Container</h3>
+          </td>
+          <td class="remove-border col-1-bg">120</td>
+          <td class="remove-border col-2-4-bg">100</td>
+          <td class="remove-border col-3-bg">120</td>
+          <td class="remove-border col-2-4-bg">105</td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg right-border" colspan="2">
+            <h3>EPA (Eicosapentaenoic Acid)</h3>
+          </td>
+          <td class="remove-border col-1-bg-2">800</td>
+          <td class="remove-border col-2-4-bg-2">780</td>
+          <td class="remove-border col-3-bg-2">800</td>
+          <td class="remove-border col-2-4-bg-2">650</td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg-2 right-border" colspan="2">
+            <h3>DHA (Docosahexaenoic Acid)</h3>
+          </td>
+          <td class="remove-border col-1-bg">600</td>
+          <td class="remove-border col-2-4-bg">600</td>
+          <td class="remove-border col-3-bg">600</td>
+          <td class="remove-border col-2-4-bg">450</td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg right-border" colspan="2">
+            <h3>PCB Tested</h3>
+          </td>
+          <td class="remove-border col-1-bg-2">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg-2">
+            <i class="green-check fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-3-bg-2">
+            <i class="green-check fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg-2">
+            <i class="green-check fa fa-check" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg-2 right-border" colspan="2">
+            <h3>Easy swallow 1,000 mg capsule</h3>
+          </td>
+          <td class="remove-border col-1-bg">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-3-bg">
+            <i class="green-check fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg">
+            <i class="green-check fa fa-check" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg right-border" colspan="2">
+            <h3>Donates Omega 3 to Woman &amp; Children in need</h3>
+          </td>
+          <td class="remove-border col-1-bg-2">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg-2">
+            <i class="fa fa-question" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-3-bg-2">
+            <i class="fa fa-question" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg-2">
+            <i class="fa fa-question" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg-2 right-border" colspan="2">
+            <h3>Dr. Endorsed</h3>
+          </td>
+          <td class="remove-border col-1-bg">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg">
+            <i class="green-check fa fa-check" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-3-bg">
+            <i class="fa fa-question" aria-hidden="true"></i>
+          </td>
+          <td class="remove-border col-2-4-bg">
+            <i class="fa fa-question" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg right-border" colspan="2">
+            <h3>Price</h3>
+          </td>
+          <td class="remove-border col-1-bg-2">$ 47.97</td>
+          <td class="remove-border col-2-4-bg-2">$ 56.95</td>
+          <td class="remove-border col-3-bg-2">$ 69.12</td>
+          <td class="remove-border col-2-4-bg-2">$ 71.95</td>
+        </tr>
+        <tr class="true-omega-colr-blk1">
+          <td class="omega-hdng remove-border col-0-bg-2 footer-border" colspan="2">
+            <h3>Price Per Serving</h3>
+          </td>
+          <td class="remove-border col-1-bg footer-border">$ 0.40</td>
+          <td class="remove-border col-2-4-bg footer-border">$ 0.57</td>
+          <td class="remove-border col-3-bg footer-border">$ 0.58</td>
+          <td class="remove-border col-2-4-bg footer-border">$ 0.69</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="primary-desc text--center">{{section.settings.desc}}</div>
+</div>
+   
+{% schema %}
+{
+  "name": "Product Table",
+  "class": "section section-product-table",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_img",
+      "label": "Background Image",
+      "info": "Keep this blank to use the background color."
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "txt_color",
+      "label": "Content Color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Safe, High Quality Products You Can Trust"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Section Description",
+      "default": "<p>This table compares price and quality of True Omega-3 with RES-Q 1250, Carlson's Elite Omega and Nordic Naturals Ultimate Omega</p>"
+    },
+    {
+      "type": "header",
+      "content": "Section Margin/Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Margin Bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {"name": "Product Table"}
+  ]
+}
+{% endschema %}

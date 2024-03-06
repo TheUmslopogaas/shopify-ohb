@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "26c548e7-4ebc-4d50-a887-daa25793980f": {
+      "type": "hero-banner",
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/health-guide.png",
+        "bg_color": "",
+        "txt_color": "#ffffff",
+        "title": "Optimal <br> Health Guides",
+        "desc": "",
+        "download_btn": "",
+        "download_desc": "",
+        "download_link": "",
+        "section_btn_label": "",
+        "section_btn_link": "",
+        "desc_2": "",
+        "show_arrow": true,
+        "use_desk_height": true,
+        "desk_height": 500,
+        "use_mbl_height": true,
+        "mbl_height": 400,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "ecde0744-3fbe-4787-9107-0239b05b16b5": {
+      "type": "img-text-highlight",
+      "settings": {
+        "bg_color": "#eef3e7",
+        "txt_color": "#121212",
+        "img_pos": "img-left",
+        "img": "shopify:\/\/shop_images\/optimal-img-01-1.png",
+        "btn_link": "",
+        "btn_label": "BUY NOW",
+        "img_title": "Explore how you could be improving your  quality of life with omega-3s.",
+        "img_desc": "<p>1 – Find out what omega-3s are and who needs them<\/p><p>2 – Discover exactly what omega-3s do<\/p><p>3 – Reveal the best way to introduce more omega-3s to your diet<\/p>",
+        "pretitle": "",
+        "title": "Optimal Health Guides",
+        "desc": "<p>There is so much to think about when it comes to your health.<\/p><p>Your health is also just one of the many things you have to keep on top of in the modern world so how are you possibly expected to keep up with all of this?<\/p><p>We’re here to help with our Optimal Health Guides.<\/p><p>Better understand more about what your body need what you need in order to optimise and maintain your health<\/p><p>Get a handle on which areas of your own health you need to focus on instead of just going along with the flock<\/p><p>Avoid pseudo-science and false claims that aim to prey on your fears<\/p>",
+        "signature": "shopify:\/\/shop_images\/optimal-sign-01.png",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "6812cd7b-81ef-40c0-90e7-aa5c9f677c85": {
+      "type": "health-guides",
+      "custom_css": [
+        "{background-position: top;}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/guide-bg-img.png",
+        "bg_color": "",
+        "txt_color": "#121212",
+        "title": "Upcoming Optimal Health Guides",
+        "img_1": "shopify:\/\/shop_images\/guide-img-01.png",
+        "img_2": "shopify:\/\/shop_images\/guide-img-02.png",
+        "title_1": "Immune Defense Optimal Health Guide",
+        "title_2": "Ubiquinol CoQ10 Optimal Health Guide",
+        "desc_1": "<p>Why is it that some people just don’t seem to get sick? Find out the answer to this and what steps you can take to boost your immune system to become just as resilient.<\/p>",
+        "desc_2": "<p>Ubiquinol CoQ10 can act as a fuel boost for your body. Find out how it helps boost the conversion of cellular energy and cleans up some of the messier consequences of this as you get older.<\/p>",
+        "btn_link_1": "",
+        "btn_label_1": "GET NOTIFIED ON RELEASE",
+        "btn_link_2": "",
+        "btn_label_2": "GET NOTIFIED ON RELEASE",
+        "padding_top": 160,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "26c548e7-4ebc-4d50-a887-daa25793980f",
+    "ecde0744-3fbe-4787-9107-0239b05b16b5",
+    "6812cd7b-81ef-40c0-90e7-aa5c9f677c85"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "71d2dfc4-e5dd-40a2-821f-ea7da1db5a9b": {
+      "type": "announcement-bar",
+      "blocks": {
+        "a374ea6e-9746-4d22-9d57-1f0b3627ce6c": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a374ea6e-9746-4d22-9d57-1f0b3627ce6c"
+      ],
+      "settings": {
+        "bg_color": "#387201",
+        "txt_color": "#ffffff",
+        "phone": "(877) 572-3444",
+        "show_line_separator": true,
+        "show_social": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "padding_top": 4,
+        "padding_bottom": 4,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "none",
+        "show_line_separator": false,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "padding_top": 4,
+        "padding_bottom": 4,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "71d2dfc4-e5dd-40a2-821f-ea7da1db5a9b",
+    "header"
+  ]
+}

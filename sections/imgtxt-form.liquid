@@ -1,0 +1,272 @@
+{%- style -%}
+  {% if section.settings.bg_color != blank %}
+    #shopify-section-{{ section.id }} {
+      background-color: {{section.settings.bg_color}};
+    }
+  {% endif %}
+  {% if section.settings.bg_img != blank %}
+    #shopify-section-{{ section.id }} {
+      background: url({{section.settings.bg_img | img_url: 'master'}}) center/cover no-repeat;
+    }
+  {% endif %}
+  {% if section.settings.txt_color != blank %}
+    #shopify-section-{{ section.id }},
+    #shopify-section-{{ section.id }} p {
+      color: {{section.settings.txt_color}};
+    }
+  {% endif %}
+  
+    /* Section Dynamic Spacing */
+    #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
+      margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        margin-top: {{ section.settings.margin_top }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="imgtxt-form">
+    <div class="page-width {{ section.settings.form_pos }}">
+      <div class="content">
+        {% if section.settings.img != blank %}
+          <img src="{{ section.settings.img | img_url: 'master' }}" alt="">
+        {% endif %}
+        {% if section.settings.pretitle != blank %}
+          <div class="pretitle">{{ section.settings.pretitle }}</div>
+        {% endif %}
+        {% if section.settings.title != blank %}
+          <div class="primary-title">{{ section.settings.title }}</div>
+        {% endif %}        
+        {% if section.settings.desc != blank %}
+          <div class="primary-desc">{{ section.settings.desc }}</div>
+        {% endif %}
+      </div>
+      <div class="form">
+        <div class="primary-title">ASK COACH GAREY A HEALTH QUESTION</div>
+        {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+          {%- if form.posted_successfully? -%}
+            <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+              {% render 'icon-success' %}
+              {{ 'templates.contact.form.post_success' | t }}
+            </h2>
+          {%- elsif form.errors -%}
+            <div class="form__message">
+              <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                {% render 'icon-error' %}
+                {{ 'templates.contact.form.error_heading' | t }}
+              </h2>
+            </div>
+            <ul class="form-status-list caption-large" role="list">
+              <li>
+                <a href="#ContactForm-email" class="link">
+                  {{ form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email }}
+                </a>
+              </li>
+            </ul>
+          {%- endif -%}
+          <div class="field">
+            <input
+              class="field__input"
+              autocomplete="name"
+              type="text"
+              id="ContactForm-name"
+              name="contact[{{ 'templates.contact.form.name' | t }}]"
+              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+              placeholder="{{ 'templates.contact.form.name' | t }}"
+            >
+            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          </div>
+          <div class="field field--with-error">
+            <input
+              autocomplete="email"
+              type="email"
+              id="ContactForm-email"
+              class="field__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true"
+              {% if form.errors contains 'email' %}
+                aria-invalid="true"
+                aria-describedby="ContactForm-email-error"
+              {% endif %}
+              placeholder="{{ 'templates.contact.form.email' | t }}"
+            >
+            <label class="field__label" for="ContactForm-email">
+              {{- 'templates.contact.form.email' | t }}
+              <span aria-hidden="true">*</span></label
+            >
+            {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                <span class="form__message">
+                  {%- render 'icon-error' -%}
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </span>
+              </small>
+            {%- endif -%}
+          </div>
+          <div class="field">
+            <input
+              type="tel"
+              id="ContactForm-phone"
+              class="field__input"
+              autocomplete="tel"
+              name="contact[{{ 'templates.contact.form.phone' | t }}]"
+              pattern="[0-9\-]*"
+              value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+              placeholder="{{ 'templates.contact.form.phone' | t }}"
+            >
+            <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+          </div>
+          <div class="field">
+            <textarea
+              rows="10"
+              id="ContactForm-body"
+              class="text-area field__input"
+              name="contact[{{ 'templates.contact.form.comment' | t }}]"
+              placeholder="{{ 'templates.contact.form.comment' | t }}"
+            >
+              {{- form.body -}}
+            </textarea>
+            <label class="form__label field__label" for="ContactForm-body">
+              {{- 'templates.contact.form.comment' | t -}}
+            </label>
+          </div>
+          <div class="contact__button">
+            <button type="submit" class="primary-btn">
+              {{ 'templates.contact.form.send' | t }}
+            </button>
+          </div>
+        {%- endform -%}        
+      </div>
+    </div>
+  </div>
+  
+  
+   
+  {% schema %}
+  {
+    "name": "Image Text Form",
+    "class": "section section-imgtxt-form",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background Image",
+        "info": "Keep this blank to use the background color."
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "txt_color",
+        "label": "Content Color"
+      },
+      {
+        "type": "select",
+        "id": "form_pos",
+        "options": [
+          {"value": "form-left","label": "Form Left"},
+          {"value": "form-right","label": "Form Right"}
+        ],
+        "default": "form-left",
+        "label": "Form Position"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Section Image"
+      },
+      {
+        "type": "text",
+        "id": "pretitle",
+        "label": "Section Pretitle"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Safe, High Quality Products You Can Trust"
+      },
+      {
+        "type": "richtext",
+        "id": "desc",
+        "label": "Section Description",
+        "default": "<p>OHB products are manufactured in a GMP certified facility, right here in the United States. We follow the latest safety protocols to ensure all our products meet the highest quality standards. Our nutrients are naturally sourced through green practices. OHB is committed to delivering excellence in everything we do.</p>"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Section Button URL"
+      },
+      {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Section Button Label",
+        "default": "BUY NOW"
+      },
+      {
+        "type": "header",
+        "content": "Section Margin/Padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin Top",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Margin Bottom",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {"name": "Image Text Form"}
+    ]
+  }
+  {% endschema %}

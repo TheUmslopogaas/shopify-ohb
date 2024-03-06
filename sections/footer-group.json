@@ -1,0 +1,77 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "b1d4aabf-a308-44be-bab9-e6b05a0167d5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foote-logo_03.png",
+            "image_width": 210,
+            "alignment": "center",
+            "img_desc": "<p>Optimal Health Bridge is here to support you on your journey towards optimal health. <\/p><p><br\/>We are not just another supplement company, we are a wellbeing practice where supplementation is one part.<\/p>"
+          }
+        },
+        "bb6a72ae-b8d3-4ef0-aba9-42dd25bcf2f8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Nutritional Supplements",
+            "menu": "nutritional-supplements"
+          }
+        },
+        "790fb6d1-c3fe-4a57-888b-d03b80a16e93": {
+          "type": "contact",
+          "settings": {
+            "heading": "Contact Us",
+            "location": "<p>1001 Wilshire Blvd Suite 2107, Los Angeles, CA 90017, USA<\/p>",
+            "whatsapp": "(877) 572-3444 Call or text us",
+            "email": "service@ohb3.com"
+          }
+        },
+        "f245e211-8351-4c08-ba8d-1632473c6c68": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Newsletter",
+            "desc": "<p>Sign up for the latest research + insights on Optimal Health Bridge.<\/p>"
+          }
+        },
+        "b320e04c-cf56-4f29-bfe3-83e0aec4555d": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": "<p>(FDA Disclaimer) The information on this website is not intended to replace a one-on-one relationship with a qualified health care professional and is not intended as medical advice. It is intended as a sharing of knowledge and information pertaining to wellness. We encourage you to make your own wellness decisions based upon your research and in partnership with a qualified health care professional. If you are pregnant, nursing, taking medication, or have a medical condition, consult your health care professional before using products based on this content. Products portrayed on this website are not intended to diagnose, cure or prevent any disease.<\/p>",
+            "center": true
+          }
+        }
+      },
+      "block_order": [
+        "b1d4aabf-a308-44be-bab9-e6b05a0167d5",
+        "bb6a72ae-b8d3-4ef0-aba9-42dd25bcf2f8",
+        "790fb6d1-c3fe-4a57-888b-d03b80a16e93",
+        "f245e211-8351-4c08-ba8d-1632473c6c68",
+        "b320e04c-cf56-4f29-bfe3-83e0aec4555d"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/footer-bg.png",
+        "txt_color": "#ffffff",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "padding_top": 200,
+        "padding_bottom": 36,
+        "margin_top": 100,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

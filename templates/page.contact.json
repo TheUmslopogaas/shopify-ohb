@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "a77476a6-7b32-452f-9579-e7c6bf3331a9": {
+      "type": "hero-banner",
+      "custom_css": [
+        ".primary-desc {font-size: 25px;}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/contact-bg.png",
+        "bg_color": "",
+        "txt_color": "#ffffff",
+        "title": "Contact Us",
+        "desc": "<p>We’re Happy to Help!<\/p>",
+        "download_btn": "",
+        "download_desc": "",
+        "download_link": "",
+        "section_btn_label": "",
+        "section_btn_link": "",
+        "desc_2": "",
+        "show_arrow": true,
+        "use_desk_height": true,
+        "desk_height": 600,
+        "use_mbl_height": true,
+        "mbl_height": 350,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "ca9d83cd-724f-4b8a-84d2-22e3ab20c225": {
+      "type": "contact-info",
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/map-bg-img.png",
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-left",
+        "phone": "(877) 572-3444",
+        "mail": "support@optimalhealthbridge.com",
+        "location": "1001 Wilshire Boulevard # 2107, Los Angeles, CA 90017",
+        "google_map": "<iframe style=\"height:100%;width:100%;border:0;\" frameborder=\"0\" src=\"https:\/\/www.google.com\/maps\/embed\/v1\/place?q=1001+Wilshire+Boulevard+#2107,+Los+Angeles,+CA+90017,+USA&amp;key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8\"><\/iframe>",
+        "padding_top": 400,
+        "padding_bottom": 400,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "a77476a6-7b32-452f-9579-e7c6bf3331a9",
+    "ca9d83cd-724f-4b8a-84d2-22e3ab20c225"
+  ]
+}

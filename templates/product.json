@@ -1,0 +1,564 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "63f9b22f-d70c-4582-896c-8e90a10f81b4": {
+          "type": "review_text",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "b33c10ec-1346-423d-897a-a7077e260f25": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "63f9b22f-d70c-4582-896c-8e90a10f81b4",
+        "title",
+        "price",
+        "b33c10ec-1346-423d-897a-a7077e260f25",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "background-1",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "a836405a-09ce-484c-8011-e2ed03e98d2f": {
+      "type": "iconlist",
+      "blocks": {
+        "31cbe75f-e258-4a83-859b-9df940a9a7e1": {
+          "type": "icon",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/dairy-free-1.png",
+            "desc": "<h3>Lactose-free<\/h3>"
+          }
+        },
+        "8c569de7-5d75-468e-9d02-75bdffdbebf2": {
+          "type": "icon",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/gluten-free-1.png",
+            "desc": "<h3>Gluten-free Sodium free<\/h3>"
+          }
+        },
+        "58f3a3c8-a7cd-42b2-bb1e-bc90bac447ee": {
+          "type": "icon",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/additives-1.png",
+            "desc": "<h3>No dye and additives<\/h3>"
+          }
+        },
+        "31718331-2406-4b2d-89b3-9573d65493e7": {
+          "type": "icon",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/made-usa-1.png",
+            "desc": "<p>Made in the U.S.A<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "31cbe75f-e258-4a83-859b-9df940a9a7e1",
+        "8c569de7-5d75-468e-9d02-75bdffdbebf2",
+        "58f3a3c8-a7cd-42b2-bb1e-bc90bac447ee",
+        "31718331-2406-4b2d-89b3-9573d65493e7"
+      ],
+      "custom_css": [
+        "background-position: top;.iconlist-content {justify-content: center;}",
+        ".single-icon {width: 180px;}",
+        "img {max-width: 80px;}",
+        ".card-desc * {font-family: \"Flexo Medium\";}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/top.png",
+        "bg_color": "",
+        "txt_color": "#121212",
+        "title": "The Cholesterol Rebooter",
+        "desc": "",
+        "padding_top": 160,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "112106ca-11ce-4e3f-89e4-305466ccb38a": {
+      "type": "img-text",
+      "custom_css": [
+        "background-position: bottom;p {margin-bottom: 20px; font-family: \"Flexo Regular\"; letter-spacing: 0px;}",
+        "strong {font-family: \"Flexo Bold\";}"
+      ],
+      "settings": {
+        "bg_color": "#f7f7f7",
+        "txt_color": "#121212",
+        "img_pos": "img-left",
+        "img": "shopify:\/\/shop_images\/rebooter-img-1.png",
+        "pretitle": "",
+        "title": "",
+        "desc": "<p><strong>Helps maintain a healthy cholesterol<\/strong><br\/>In clinical studies, red yeast rice supplements have been shown to lower LDL cholesterol by up to 30%.<\/p><p><\/p><p><strong>Supports healthy heart<\/strong><br\/>Red Yeast rice is a dietary supplement that has been used for centuries in traditional Chinese medicine to promote heart health.<\/p><p><\/p><p><strong>Supports Kidney Function<\/strong><br\/>One study found that patients with chronic kidney disease who took red yeast rice had improvements in their kidney function and lipid levels. These findings suggest that red yeast rice may be a useful addition to the treatment of chronic kidney disease.<\/p><p><\/p><p><strong>Reduces Inflammation<\/strong><br\/>Red yeast rice contains compounds that may help to reduce inflammation. In a recent study, participants who took red yeast rice supplements for eight weeks had significantly lower levels of inflammation than those who did not take the supplements.<\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": false,
+        "show_quote": false,
+        "padding_top": 40,
+        "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "b02de79a-081a-402e-8c28-0043682e5c72": {
+      "type": "video-desc",
+      "custom_css": [
+        ".primary-desc {font-size: 16px;}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/desease-bg-img-1.png",
+        "bg_color": "",
+        "txt_color": "#ffffff",
+        "title": "Do you know that heart disease is the number 1 reasonfor death in the U.S every year?",
+        "video": "",
+        "desc": "<p>With the exponential growth of the fast-food chain and bad eating habits, we are more prone to heart attack than ever before…All the saturated fat and trans-fat you consume every day in the form of burgers, pizzas, cookies, or any unhealthy diets increases the bad cholesterol or LDL in your arteries…<\/p><p>But that’s not all…<\/p><p>Doctors’ number 1 recommendation when it comes to decreasing your cholesterol level is statin drugs…<\/p><p>But you should know that statin drugs are harmful to your body and have lots of horrible and permanent side effects, including nausea, bloating, abdominal cramps, and diarrhea.<\/p><p>And that’s where the red yeast rice comes in…<\/p><p>You see, red yeast rice is white rice fermented with a type of yeast called Monascus purpureus which gives it a red color.<\/p><p>Red yeast rice contains compounds called monacolin K that not only inhibits the enzyme that’s responsible for cholesterol<\/p><p>production…<\/p><p>But it’s also a 100% natural source of statin…<\/p><p>Which means that when you take it, you help reduce the cholesterol and cardiovascular risk without any side effects.<\/p><p>And you’ll be surprised to know that red yeast rice has been used for thousands of years by Chinese medicine to treat digestion, obesity, and blood circulation…<\/p>",
+        "btn_label": "",
+        "btn_url": "",
+        "bottom_txt": "",
+        "padding_top": 200,
+        "padding_bottom": 200,
+        "margin_top": -120,
+        "margin_bottom": 0
+      }
+    },
+    "f7285b78-1ba2-49fa-b61e-5001de243b42": {
+      "type": "video-text-video",
+      "custom_css": [
+        ".primary-desc {font-size: 16px;}"
+      ],
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-right",
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/8_PbR11c1oI?si=T4iKtNeEWVaj7-OP\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen><\/iframe>",
+        "pretitle": "",
+        "title": "Benefits of Red Yeast Rice",
+        "desc": "<p>Makes your heart healthy<br\/>When produced in excess, the LDL or bad cholesterol sticks to the wall of your arteries and blood vessels…<\/p><p>Causing it to narrow and stiffen up…<\/p><p>This makes it difficult for your blood to flow through your arteries…<\/p><p>Which means that your heart has to work harder than before…<\/p><p>And this weakens your heart…<\/p><p>And sometimes arteries can rupture, causing an immediate heart attack or blood clots that rush to the brain leading to a stroke.<\/p><p>This may lead to heart failure, a serious condition where your heart can’t pump blood the way it should.<\/p><p>The Red yeast rice helps to lower your LDL or bad cholesterol level making your blood flow more freely through your arteries and blood vessels…<\/p><p>But that’s not the only effect of Red Yeast Rice on cholesterol…<\/p><p>It also helps stops the action of the enzyme in the body that helps make cholesterol.<\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": false,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "7fed2408-d3e1-4841-a907-15a3f47bab38": {
+      "type": "img-text",
+      "custom_css": [
+        ".img-slider-wrap {max-width: 400px !important;}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/testimonai-bg-img2_02-1.png",
+        "bg_color": "",
+        "txt_color": "#ffffff",
+        "img_pos": "img-left",
+        "img": "shopify:\/\/shop_images\/treat-img_03-1.png",
+        "pretitle": "",
+        "title": "Help treat metabolicsyndrome",
+        "desc": "<p>Metabolic syndrome is a cluster of conditions that increases the risk of chronic diseases such as diabetes, strokes, high blood pressure, or increased blood sugar…<\/p><p>Red yeast rice helps reduce the risk factor<\/p><p>Several studies also found that it reduces insulin levels, blood sugar, and systolic blood pressure in people with metabolic syndrome…<\/p><p>And also acts as a natural treatment to help prevent them…<\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": true,
+        "show_quote": false,
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "4d550022-1925-4587-b67a-d0b8b25db262": {
+      "type": "img-text",
+      "custom_css": [
+        ".img-slider-wrap {max-width: 450px !important;}"
+      ],
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-right",
+        "img": "shopify:\/\/shop_images\/prevent-img_03-1.png",
+        "pretitle": "",
+        "title": "Helps prevent diet-inducedweight gain",
+        "desc": "<p>A study done by the Journal of Medicinal Food found that red yeast rice was effective in treating cholesterol and preventing weight gain caused by fatty foods.<br\/><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/26133037\/\" target=\"_blank\">https:\/\/pubmed.ncbi.nlm.nih.gov\/26133037\/ <\/a><\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": false,
+        "show_quote": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "637211b0-b565-4e3f-86c9-777f4ce49e20": {
+      "type": "img-text",
+      "custom_css": [
+        ".img-slider-wrap {max-width: 400px !important;}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/Inflammation_02-1.png",
+        "bg_color": "",
+        "txt_color": "#ffffff",
+        "img_pos": "img-left",
+        "img": "shopify:\/\/shop_images\/Inflammation-img-1.png",
+        "pretitle": "",
+        "title": "Reduces Inflammation",
+        "desc": "<p>Inflammation is important for our body, as it helps keep the infections and foreign invaders away from the body…<\/p><p>But prolonged inflammation can be harmful to your health and give rise to various chronic issues like diabetes, cancer, or high blood pressure…<\/p><p>Red yeast rice helps reduce the inflammation by confronting the oxida-tive stress level in your body.<\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": true,
+        "show_quote": false,
+        "padding_top": 160,
+        "padding_bottom": 100,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "a03c950f-1e91-423b-a729-f5f2d3cac771": {
+      "type": "img-text",
+      "custom_css": [
+        ".img-slider-wrap {max-width: 450px !important;}"
+      ],
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-right",
+        "img": "shopify:\/\/shop_images\/kidney-img_06-1.png",
+        "pretitle": "",
+        "title": "May Help Repair Kidney Damage",
+        "desc": "<p>Triglycerides and high cholesterol can be harmful to the kidneys…<\/p><p>They plague the renal arteries and cut off the blood supply to the kidney…<\/p><p>Which may result in loss of your kidney function…<\/p><p>Red yeast rice, if taken regularly, may help to reverse the kidney damage from triglycerides and high cholesterol. <a href=\"https:\/\/www.mayoclinic.org\/diseases-conditions\/renal-artery-stenosis\/symptoms-causes\/syc-20352777\" target=\"_blank\">https:\/\/www.mayoclinic.org\/diseases-conditions\/renal-artery-stenosis\/symptoms-causes\/syc-20352777<\/a><\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": false,
+        "show_quote": false,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "2cd1f745-d7e7-40a1-9a2e-c3ad40611e12": {
+      "type": "img-text",
+      "custom_css": [
+        ".img-slider-wrap {max-width: 450px !important;}"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/anti-cancer-bg-img.png",
+        "bg_color": "",
+        "txt_color": "#ffffff",
+        "img_pos": "img-left",
+        "img": "shopify:\/\/shop_images\/anti-care-img-1.png",
+        "pretitle": "",
+        "title": "May have anti-cancerproperties",
+        "desc": "<p>Although it was tested on mice and animals…<\/p><p>Research shows that red yeast has the potential to reduce the growth of cancer cells…<\/p><p>In a test-tube study tested on prostate cancer,<\/p><p>It was found that treating cancer with red yeast rice decreased the growth of cancer cells than lovastatin, a cholesterol lowering medication with anticancer effects. <a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/17869085\/\" target=\"_blank\">https:\/\/pubmed.ncbi.nlm.nih.gov\/17869085\/<\/a><\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": false,
+        "show_quote": false,
+        "padding_top": 160,
+        "padding_bottom": 120,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "7d66274a-260d-4e66-81bb-c6ac7b772844": {
+      "type": "img-text",
+      "custom_css": [
+        ".img-slider-wrap {max-width: 400px !important;}",
+        ".primary-desc {font-family: \"Flexo Regular\";}"
+      ],
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-right",
+        "img": "shopify:\/\/shop_images\/colestene-img_09-1.png",
+        "pretitle": "",
+        "title": "Why our red yeast rice?",
+        "desc": "<p>Red yeast rice if taken in a higher amount is very dangerous for your body…<\/p><p>You see, the compound monacolin is controversial in nature…<\/p><p>When regulated it can be a great remedy to prevent the bad cholesterol buildup in your arteries…<\/p><p>But when not regulated, it can lead to various problems including gas, bloating, stomach pain…<\/p><p>And sometimes in severe cases, it can also lead to muscle problems, allergic reactions, and liver toxicity.<\/p><p>Red yeast rice doesn’t contain a standard amount of Monacolin…<\/p><p>The content varies significantly in every single batch produced…<\/p><p>Some high and some less.<\/p><p>That’s why we make sure that every extract we produce is of topmost quality…<\/p><p>And we have our own independent tests that prove what you’re taking has the right amounts of each extract.<\/p><p>And doesn’t pose you any harmful risk…<\/p><p>This means you’re getting the same dose that produced the amazing results in the clinical studies.<\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": false,
+        "show_quote": false,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "be7eae3b-0131-450a-991e-b9080e58e1fb": {
+      "type": "testimonial",
+      "blocks": {
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "desc": "<p>“You’re 73 years old and you’ve been with us for 15 years, and you think you might have something to do with your lifestyle, living the good life and taking our supplements. Exactly. When I started out, I followed your recommendation. I was pounding in certain ones. And then about probably five or six, maybe seven or eight years ago, I went on the program where I get the same. I don’t have to order individually.” <\/p>",
+            "author": "Terry"
+          }
+        },
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "desc": "<p>“You’re 73 years old and you’ve been with us for 15 years, and you think you might have something to do with your lifestyle, living the good life and taking our supplements. Exactly. When I started out, I followed your recommendation. I was pounding in certain ones. And then about probably five or six, maybe seven or eight years ago, I went on the program where I get the same. I don’t have to order individually.” <\/p>",
+            "author": "Terry"
+          }
+        },
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "desc": "<p>“You’re 73 years old and you’ve been with us for 15 years, and you think you might have something to do with your lifestyle, living the good life and taking our supplements. Exactly. When I started out, I followed your recommendation. I was pounding in certain ones. And then about probably five or six, maybe seven or eight years ago, I went on the program where I get the same. I don’t have to order individually.” <\/p>",
+            "author": "Terry"
+          }
+        },
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "desc": "<p>“You’re 73 years old and you’ve been with us for 15 years, and you think you might have something to do with your lifestyle, living the good life and taking our supplements. Exactly. When I started out, I followed your recommendation. I was pounding in certain ones. And then about probably five or six, maybe seven or eight years ago, I went on the program where I get the same. I don’t have to order individually.” <\/p>",
+            "author": "Terry"
+          }
+        }
+      },
+      "block_order": [
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-1",
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-2",
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-3",
+        "template--21576041529634__be7eae3b-0131-450a-991e-b9080e58e1fb-testimonial-4"
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/testimonai-bg-img2_02-1_1.png",
+        "bg_color": "rgba(0,0,0,0)",
+        "txt_color": "#ffffff",
+        "title": "See What Our Customers Have to Say",
+        "desc": "",
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "f2ccb90e-8124-40de-adac-34b6d0847676": {
+      "type": "img-text",
+      "custom_css": [
+        ".primary-desc {font-family: \"Flexo Regular\";}"
+      ],
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-left",
+        "img": "shopify:\/\/shop_images\/guarantee.png",
+        "pretitle": "",
+        "title": "Try Our Products, Risk-Free.",
+        "desc": "<p>Your satisfaction is important to us. If you are not satisfied for any reason, we will exchange it for another product or refund your money (Actual shipping costs are non-refundable) within 365 days of the order date. You must contact us for Return Authorization before mailing the product back to us.<\/p>",
+        "btn_link": "",
+        "btn_label": "",
+        "img_small": true,
+        "show_quote": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "64911f72-435c-49b0-8f92-70d7844b67b0": {
+      "type": "imgtxt-form",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/light-green-bg-img_03.png",
+        "bg_color": "",
+        "txt_color": "#121212",
+        "form_pos": "form-left",
+        "img": "shopify:\/\/shop_images\/ask-coach-img_03.png",
+        "pretitle": "",
+        "title": "",
+        "desc": "<p><strong>Welcome to Ask Coach,<\/strong> Optimal Health Bridge’s Blog, where we do our best to support you on your journey towards optimal health.<\/p><p> <\/p><p><strong>Knowledge Is Self Empowerment!<\/strong><\/p><p> <\/p><p>Have you got a question that we have not<\/p><p>answered yet? Ask Coach!<\/p>",
+        "btn_link": "",
+        "btn_label": "BUY NOW",
+        "padding_top": 100,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "31391dbb-f2f8-4864-87bf-4b6abf55bdf3": {
+      "type": "video-desc",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/how-we-help-bg-img2_02-1.png",
+        "bg_color": "",
+        "txt_color": "#fff",
+        "title": "How We Help",
+        "video": "<iframe src=\"https:\/\/player.vimeo.com\/video\/690054218?h=c55a5dcfe8&byline=0&portrait=0\" width=\"640\" height=\"311\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen><\/iframe>",
+        "desc": "<p>We donate true omega 3® to Dr David Ajibade Brain & Body Foundation<br\/>for children and low income families.<\/p>",
+        "btn_label": "Shop All Our Supplements",
+        "btn_url": "",
+        "bottom_txt": "15,000+ Satisfied Customers",
+        "padding_top": 200,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "92312af8-3bd3-4670-9b42-e367d6e2618a": {
+      "type": "img-text",
+      "settings": {
+        "bg_color": "",
+        "txt_color": "#121212",
+        "img_pos": "img-right",
+        "img": "shopify:\/\/shop_images\/ultra-vitamins-img-2.png",
+        "pretitle": "",
+        "title": "Safe, High Quality Products You Can Trust",
+        "desc": "<p>OHB products are manufactured in a GMP certified facility, right here in the United States. We follow the latest safety protocols to ensure all our products meet the highest quality standards. Our nutrients are naturally sourced through green practices. OHB is committed to delivering excellence in everything we do.<\/p>",
+        "btn_link": "",
+        "btn_label": "BUY NOW",
+        "img_small": false,
+        "show_quote": false,
+        "padding_top": 100,
+        "padding_bottom": 60,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "f03588fb-bcc3-475a-8f58-a8b3ea2830ba": {
+      "type": "img-text-highlight",
+      "settings": {
+        "bg_color": "#eef3e7",
+        "txt_color": "#121212",
+        "img_pos": "img-right",
+        "img": "shopify:\/\/shop_images\/omega3-img_03.png",
+        "btn_link": "",
+        "btn_label": "EXPLORE THE ULTIMATE GUIDE TO OMEGA 3",
+        "img_title": "Explore how you could be improving your quality of life with omega-3s.",
+        "img_desc": "<ol><li>– Find out what omega-3s are and who needs them<\/li><li>– Discover exactly what omega-3s do<\/li><li>– Reveal the best way to introduce more omega-3s to<br\/>your diet<\/li><\/ol>",
+        "pretitle": "",
+        "title": "Optimal Health Guides",
+        "desc": "<p>here is so much to think about when it comes to your health.Your health is also just one of the many things you have to keep on top of in the modern world so how are you possibly expected to keep up with all of this?We’re here to help with our Optimal Health Guides.<\/p><ul><li>Better understand more about what your body need what you need in order to optimise and maintain your health<\/li><li>Get a handle on which areas of your own health you need to focus on instead of just going along with the flock<\/li><li>Avoid pseudo-science and false claims that aim to prey on your fears<\/li><\/ul>",
+        "signature": "shopify:\/\/shop_images\/optimal-sign-01.png",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "c5a88f42-e1a9-4fd6-a463-92dd88449552": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest Blogs",
+        "heading_size": "primary-title",
+        "blog": "omegify-your-life",
+        "post_limit": 12,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a836405a-09ce-484c-8011-e2ed03e98d2f",
+    "112106ca-11ce-4e3f-89e4-305466ccb38a",
+    "b02de79a-081a-402e-8c28-0043682e5c72",
+    "f7285b78-1ba2-49fa-b61e-5001de243b42",
+    "7fed2408-d3e1-4841-a907-15a3f47bab38",
+    "related-products",
+    "4d550022-1925-4587-b67a-d0b8b25db262",
+    "637211b0-b565-4e3f-86c9-777f4ce49e20",
+    "a03c950f-1e91-423b-a729-f5f2d3cac771",
+    "2cd1f745-d7e7-40a1-9a2e-c3ad40611e12",
+    "7d66274a-260d-4e66-81bb-c6ac7b772844",
+    "be7eae3b-0131-450a-991e-b9080e58e1fb",
+    "f2ccb90e-8124-40de-adac-34b6d0847676",
+    "64911f72-435c-49b0-8f92-70d7844b67b0",
+    "31391dbb-f2f8-4864-87bf-4b6abf55bdf3",
+    "92312af8-3bd3-4670-9b42-e367d6e2618a",
+    "f03588fb-bcc3-475a-8f58-a8b3ea2830ba",
+    "c5a88f42-e1a9-4fd6-a463-92dd88449552"
+  ]
+}
